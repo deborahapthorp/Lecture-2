@@ -427,7 +427,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 
 -   [John Ioannidis (2005)](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124)
 -   This paper made a big splash in 2005
--   Cited 1,559 times (update 2016: 1886 citations) (further update 2023: 7017 citations)
+-   Cited 1,559 times (update 2016: 1,886 citations) (further update 2023: 7,053 citations)
 -   Argues that it can be shown most published findings are false, based on PPV (positive predictive value
 
 ## Is that true?
