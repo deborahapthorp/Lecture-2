@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.2.335">
+
+  <meta name="author" content="A/Prof.&nbsp;Deborah Apthorp">
+  <title>PSYC422 Lecture 2</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="logo.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">PSYC422 Lecture 2</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+A/Prof.&nbsp;Deborah Apthorp 
+</div>
+</div>
+</div>
+
+</section>
+<section>
+<section id="power-bias-and-research-ethics---how-to-be-a-better-researcher-part-i" class="title-slide slide level1 center">
+<h1>Power, bias and research ethics - how to be a better researcher (Part I)</h1>
+
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ul>
+<li class="fragment">Types of research questions and types of bias</li>
+<li class="fragment">Brief intro to hypothesis testing, power and effect sizes</li>
+<li class="fragment">Issues in research and publication Part I: The Problem</li>
+<li class="fragment">Issues in research and publication Part II: The Solutions? (Lecture 3 - stay tuned!)</li>
+</ul>
+</section>
+<section id="types-of-research-question" class="slide level2">
+<h2>Types of research question</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Existence</li>
+<li class="fragment">Description/classification</li>
+<li class="fragment">Composition</li>
+<li class="fragment">Descriptive-comparative</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Relationship</li>
+<li class="fragment">Causal</li>
+<li class="fragment">Causal-comparative</li>
+<li class="fragment">Causal-comparative interaction</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="existence-questions" class="slide level2">
+<h2>Existence questions</h2>
+<ul>
+<li class="fragment">These can be important where something may be controversial</li>
+<li class="fragment">Especially when a theory rests on the existence of x
+<ul>
+<li class="fragment">For example: Is there such a thing as the unconscious?</li>
+<li class="fragment">Can animals use language?</li>
+<li class="fragment">Is telepathy possible?</li>
+</ul></li>
+</ul>
+</section>
+<section id="descriptionclassification-questions" class="slide level2">
+<h2>Description/classification questions</h2>
+<ul>
+<li class="fragment">These often come after existence questions</li>
+<li class="fragment">What are the characteristics of X? Does it take on multiple values? What are its limits?
+<ul>
+<li class="fragment">E.g. what is the prevalence of anxiety among 4th-year Psychology students?</li>
+</ul></li>
+<li class="fragment"><em>Survey research</em> tends to describe/count/classify</li>
+</ul>
+</section>
+<section id="composition-questions" class="slide level2">
+<h2>Composition questions</h2>
+<ul>
+<li class="fragment">E.g. what are the components of psychopathy or personality?</li>
+<li class="fragment">What are the main factors of health that affect quality of life?</li>
+<li class="fragment">Factor analysis can be used here</li>
+<li class="fragment">Need to think about bias in this!</li>
+</ul>
+</section>
+<section id="descriptive-comparative-questions" class="slide level2">
+<h2>Descriptive-comparative questions</h2>
+<ul>
+<li class="fragment">Is group X different to group Y on something?</li>
+<li class="fragment">Doesn’t have to be just 2 groups!</li>
+<li class="fragment">Sway example - compare SPD to SZ and controls</li>
+<li class="fragment">Are Australians happier than Americans?
+<ul>
+<li class="fragment"><em>Be careful of measurement</em> - construct validity, reliability, generalisability, third variable problem</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>My example of postural sway fits into this. People with SPD sway more than controls. (Doesn’t have to be 2 groups - in our study we compared 3 groups.) Be careful of measurement here - construct validity, reliability. Generalisability also.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="relationship-questions" class="slide level2">
+<h2>Relationship questions</h2>
+<ul>
+<li class="fragment">Is there a relationship or association between X and Y?</li>
+<li class="fragment">A special case of comparative question</li>
+<li class="fragment">Can be simple associations (correlation)</li>
+<li class="fragment">Or more complex (multiple regression)</li>
+<li class="fragment">E.g. what variables are associated with anxiety in 4th year psychology students?</li>
+</ul>
+</section>
+<section id="causal-questions" class="slide level2">
+<h2>Causal questions</h2>
+<ul>
+<li class="fragment">Does x produce, lead to, or prevent changes in y?</li>
+<li class="fragment">Don’t have to have a single cause and effect</li>
+<li class="fragment">Can be exploratory (what are the consequences of x)?</li>
+<li class="fragment">Ideally, use random assignment with control group</li>
+<li class="fragment">E.g. does dance training improve balance in Parkinson’s patients?</li>
+</ul>
+<aside class="notes">
+<p>A causal conclusion could also be formed from a “natural experiment” - e.g.&nbsp;when a new reading curriculum is introduced in one school but not another, similar school.</p>
+<p>Random assignment is very important - otherwise, for instance, only patients who are confident about their balance would choose the class.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="causal-comparative-questions" class="slide level2">
+<h2>Causal-comparative questions</h2>
+<ul>
+<li class="fragment">Does x cause more change in y than does z?</li>
+<li class="fragment">E.g. are antidepressant drugs more effective in reducing depression than psychotherapy?</li>
+<li class="fragment">E.g. does dance training improve balance in Parkinson’s better than tai chi?</li>
+<li class="fragment">Same conditions as causal questions</li>
+</ul>
+<aside class="notes">
+<p>Here random assignment is also important. Second manipulation must also be valid &amp; introduced in an unbiased way.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="causal-comparative-interaction-questions" class="slide level2">
+<h2>Causal-comparative interaction questions</h2>
+<ul>
+<li class="fragment">Does IV have different causal effects depending on the level of the other IV/s?</li>
+<li class="fragment">E.g. is coffee more effective in improving cognitive performance in the morning than the afternoon?</li>
+<li class="fragment"><strong>Note that effect sizes of interactions are usually smaller</strong>.</li>
+</ul>
+</section></section>
+<section>
+<section id="bias" class="title-slide slide level1 center">
+<h1>Bias</h1>
+
+</section>
+<section id="types-of-bias" class="slide level2">
+<h2>Types of bias</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Sampling bias</li>
+<li class="fragment">Observer bias</li>
+<li class="fragment">Participant reactivity</li>
+<li class="fragment">Non-response bias</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Social desirability bias</li>
+<li class="fragment">Response acquiescence</li>
+<li class="fragment">Leading/biased questions</li>
+<li class="fragment">Publication bias</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>So sampling bias can result from a number of things - self-selection bias, such that an unrepresentative sample of people choose to take your survey. Or it could be that you ask all your friends to take the survey and they are not representative of the general population. Or that you sample only undergraduate Psychology students and they are 70% female with an average age of 22. Your telephone poll may only sample people who are at home at 4pm.</p>
+<p>Observer bias can also take many forms. An experimenter may be biased and the outset and structure the experiment explicitly to only look for things they are interested in. An observer coding behaviour may have some unconscious beliefs that will lead them to observe more of a particular thing. This could particularly be a problem if the experimenter is aware, for instance, which is the control and which the experimental group, or whether participants are being measured before or after an intervention.</p>
+<p>Participant reactivity can be a particular problem in observational research - this is based on the idea that people or animals may behave differently if they know they are being observed (as in reality TV, for an extreme example). This is a particular problem in participant observation studies, in which the researcher themselves is a participant in the activity being observed.</p>
+<p>Non-response bias is slightly different from sampling bias - it’s based on the idea that certain groups or demographics may be less likely to return surveys (for instance, perhaps, people who use illegal drugs, etc.).</p>
+<p>You probably all know about social desirability bias. That’s just that people like to paint themselves as how they’d like to be seen. A perpetual problem for alcohol researchers.</p>
+<p>Response acquiescence is slightly different from that - it’s the tendency to just agree with statements. This is why we tend to have reverse-scaled questions.</p>
+<p>Biased questions, as you know, are a big problem in political polling.</p>
+<p>The last one is going to be the subject of the second half of this lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="brief-recap-on-hypothesis-testing-and-statistical-power" class="slide level2">
+<h2>Brief recap on hypothesis testing and statistical power</h2>
+<ul>
+<li class="fragment">Logic of hypothesis testing</li>
+<li class="fragment">Statistical Power</li>
+<li class="fragment">Effect Size</li>
+<li class="fragment">“We are trying to prove ourselves wrong as quickly as possible, because only in that way can we find progress.” – Richard Feynman</li>
+</ul>
+</section>
+<section id="logic-of-hypothesis-testing" class="slide level2">
+<h2>Logic of hypothesis testing</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/hypothesis.png"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">In hypothesis testing, researchers use information from <strong>samples</strong> to draw conclusions about <strong>populations</strong>.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="steps-in-hypothesis-testing" class="slide level2">
+<h2>Steps in hypothesis testing</h2>
+<ul>
+<li class="fragment">Develop a hypothesis</li>
+<li class="fragment">Sample the population</li>
+<li class="fragment">Compute a test statistic for the sample (e.g., t, F, etc.)</li>
+<li class="fragment">Compare the test statistic from your sample to an appropriate comparison distribution</li>
+<li class="fragment">Make a decision about whether to <strong>retain</strong> or <strong>reject</strong> the null hypothesis</li>
+</ul>
+<aside class="notes">
+<p>But what can happen here is you can get it wrong - in fact, statistics is all about how to quantify how wrong you might be.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="importance-of-being-wrong" class="slide level2">
+<h2>Importance of being wrong</h2>
+
+<img data-src="images/wrong.jpeg" class="r-stretch quarto-figure-center"><p>Source: <a href="https://twitter.com/nathanwpyle/status/1176860147223867393?s=20">Nathan Pyle on Twitter</a></p>
+</section>
+<section id="decision-errors-in-hypothesis-testing" class="slide level2">
+<h2>Decision errors in hypothesis testing</h2>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision</th>
+<th>Null is true</th>
+<th>Null is false</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Null is not rejected</td>
+<td><div class="fragment" style="color: green;">
+<p>Correct acceptance</p>
+</div></td>
+<td><div class="fragment" style="color: red;">
+<p>Type II error</p>
+</div></td>
+</tr>
+<tr class="even">
+<td>Null is rejected</td>
+<td><div class="fragment" style="color: red">
+<p>Type I error</p>
+</div></td>
+<td><div class="fragment" style="color: green;">
+<p>Correct rejection</p>
+</div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="type-i-error" class="slide level2">
+<h2>Type I error</h2>
+<ul>
+<li class="fragment">Rejecting the null hypothesis when it is true.</li>
+<li class="fragment">For example, based on data from a sample, a researcher may conclude:
+<ul>
+<li class="fragment">Two variables are related when they are not related in the population.</li>
+<li class="fragment">An experimental treatment has an effect on an outcome variable when in fact it does not.</li>
+</ul></li>
+</ul>
+</section>
+<section id="type-ii-error" class="slide level2">
+<h2>Type II error</h2>
+<ul>
+<li class="fragment">Failing to reject the null hypothesis when it is false.</li>
+<li class="fragment">For example, based on data from a sample, a researcher may conclude:
+<ul>
+<li class="fragment">Two variables are unrelated, when in fact they are</li>
+<li class="fragment">A treatment is NOT effective, when in fact it is</li>
+</ul></li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="images/wahlberg_type2.jpeg" class="r-stretch quarto-figure-center"></section>
+<section id="alpha-alpha" class="slide level2">
+<h2>Alpha (<span class="math inline">\(\alpha\)</span>)</h2>
+<ul>
+<li class="fragment">This is just the cut-off value that we set for deciding when to reject/accept the null</li>
+<li class="fragment">Conventionally this is .05, <strong>but it doesn’t have to be!</strong></li>
+<li class="fragment">For instance, if we wanted to be more conservative, we might set <span class="math inline">\(\alpha = .01\)</span></li>
+<li class="fragment">Or, if we want to be more liberal (for instance, in a small pilot sample), we might set <span class="math inline">\(\alpha = .10\)</span></li>
+</ul>
+</section>
+<section id="power" class="slide level2">
+<h2>Power</h2>
+<ul>
+<li class="fragment">The power of a statistical test represents the probability of correctly rejecting the null hypothesis.</li>
+<li class="fragment">In mathematical terms, power can be defined as:</li>
+<li class="fragment"><span class="math inline">\(1 –\beta\)</span></li>
+<li class="fragment">where <span class="math inline">\(\beta\)</span> is the probability of making a Type II error</li>
+<li class="fragment">This is illustrated in the next slide!</li>
+</ul>
+</section>
+<section id="alpha-beta-and-power" class="slide level2">
+<h2>Alpha, beta and power</h2>
+
+<img data-src="images/alpha_beta_power.png" class="r-stretch quarto-figure-center"><div class="footer">
+<p>Really good interactive demo <a href="https://rpsychologist.com/d3/nhst/">here</a>!</p>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="images/wahlberg_power.jpeg" class="r-stretch quarto-figure-center"></section>
+<section id="p-values-dont-mean-what-you-have-been-taught" class="slide level2">
+<h2>P-values don’t mean what you have been taught!!</h2>
+<ul>
+<li class="fragment">A <a href="https://journals.sagepub.com/doi/full/10.1177/2515245919858072">recent study</a> found that 89% of introductory Psychology textbooks contained incorrect explanations of p-values.</li>
+<li class="fragment">(30 textbooks were studied but only 28 actually contained any definitions; of those, 25 contained wrong ones.)</li>
+<li class="fragment">Correct definition: The proportion of test statistics that will be at least that extreme <strong>if the null hypothesis is true</strong>.</li>
+</ul>
+<div class="footer">
+<p>Cassidy, S. A. <em>et al</em>, (2019). Failing Grade: 89% of Introduction-to-Psychology Textbooks That Define or Explain Statistical Significance</p>
+<p>Do So Incorrectly. <em>Advances in Methods and Practices in Psychological Science</em>, 2(3), 233–239. <a href="https://doi.org/10.1177/2515245919858072" class="uri">https://doi.org/10.1177/2515245919858072</a></p>
+</div>
+</section>
+<section id="incorrect-definitions" class="slide level2">
+<h2>Incorrect definitions</h2>
+
+<img data-src="images/wrongstats.png" class="r-stretch quarto-figure-center"><p class="caption">Common fallacies about p-values</p></section>
+<section id="section-2" class="slide level2" data-background-color="white">
+<h2></h2>
+
+<img data-src="images/pvalues_hands.png" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://twitter.com/StuartJRitchie/status/1237172792350646273?s=20">Stuart Ritchie on Twitter</a></p></section>
+<section id="why-is-power-important" class="slide level2">
+<h2>Why is power important?</h2>
+<ul>
+<li class="fragment">If power is too low, you will have a high probability of making a Type 2 error (i.e., failing to reject a false null hypothesis).</li>
+<li class="fragment">If power is too high, you might waste time and other resources by collecting data from more participants than you need.</li>
+<li class="fragment">However, much better to have too much than too little!!</li>
+<li class="fragment">For discussion: Is this an ethical issue?</li>
+</ul>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="images/wahlberg_power_effectsize.jpeg" class="r-stretch"></section>
+<section id="power-analysis" class="slide level2">
+<h2>Power analysis</h2>
+<ul>
+<li class="fragment">Power analysis is used to determine how many participants are needed in a study to have a good chance of finding an effect if it is there</li>
+<li class="fragment">Information needed:
+<ul>
+<li class="fragment">Target power level (typically set at .80 but can be higher! )</li>
+<li class="fragment">Critical alpha level (typically set at .05 but can be lower!)</li>
+<li class="fragment">Expected effect size for your study (where possible, use published results)</li>
+</ul></li>
+</ul>
+</section>
+<section id="power-analysis-1" class="slide level2">
+<h2>Power analysis</h2>
+<ul>
+<li class="fragment">Numerous free online and downloadable programs that can be used to conduct power analyses</li>
+<li class="fragment">Online Power Calculators:
+<ul>
+<li class="fragment"><a href="https://powerandsamplesize.com/">Power and Sample Size</a></li>
+<li class="fragment"><a href="https://shiny.ieis.tue.nl/anova_power/">ANOVA Power</a> (specifically for ANOVA designs)</li>
+</ul></li>
+<li class="fragment">Downloadable program: <a href="https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower">G*Power3 (3.1.9.6)</a></li>
+</ul>
+</section>
+<section id="effect-size" class="slide level2">
+<h2>Effect size</h2>
+<ul>
+<li class="fragment">An index that describes the strength of the relationship between two variables.</li>
+<li class="fragment">There are several common indices of effect size used in psychological research (e.g., <span class="math inline">\(r\)</span>, <span class="math inline">\(d\)</span>, <span class="math inline">\(\eta^2\)</span> , <span class="math inline">\(F\)</span>)</li>
+<li class="fragment">There are some simple rules of thumb about these</li>
+<li class="fragment">Caveat: There is some debate about this</li>
+</ul>
+</section>
+<section id="effect-size-types" class="slide level2">
+<h2>Effect size types</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-in-then-semi-out">
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(r\)</span></th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>.10</td>
+<td>Small</td>
+</tr>
+<tr class="even">
+<td>.30</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td>.50</td>
+<td>Large</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(\eta^2\)</span></th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>.01</td>
+<td>Small</td>
+</tr>
+<tr class="even">
+<td>.06</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td>.14</td>
+<td>Large</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-in-then-semi-out">
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(d\)</span></th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>.20</td>
+<td>Small</td>
+</tr>
+<tr class="even">
+<td>.50</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td>.80</td>
+<td>Large</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(f\)</span></th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>.1</td>
+<td>Small</td>
+</tr>
+<tr class="even">
+<td>.25</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td>.4</td>
+<td>Large</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="bias-again" class="title-slide slide level1 center">
+<h1>Bias (again)</h1>
+<p>“The first principle is that you must not fool yourself <strong>and you are the easiest person to fool</strong>.” – Richard Feynman</p>
+</section>
+<section id="issues-in-research-and-publication" class="slide level2">
+<h2>Issues in research and publication</h2>
+<ul>
+<li class="fragment">Part I: The Problem</li>
+<li class="fragment"><strong>Publication bias</strong> - the “File Drawer Problem”</li>
+<li class="fragment">The replication crisis - is most published research false?</li>
+<li class="fragment"><strong>Research ethics</strong> - Questionable research practices - how bad are they?</li>
+<li class="fragment">Why the system perpetuates these problems (a different kind of <strong>power</strong>?)</li>
+</ul>
+</section>
+<section id="issues-in-research-and-publication-1" class="slide level2">
+<h2>Issues in research and publication</h2>
+<ul>
+<li class="fragment">Part II: Possible Solutions</li>
+<li class="fragment">New models of publication and peer review</li>
+<li class="fragment">The Reproducibility Project</li>
+<li class="fragment">Open Science - issues and new initiatives</li>
+<li class="fragment">Can we change the system?</li>
+</ul>
+</section>
+<section id="publication-bias-definition-and-history" class="slide level2">
+<h2>Publication bias: Definition and history</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li class="fragment">First termed “File Drawer Problem” by Rosenthal (1979) but recognised as a problem since at least 1959 (Sterling)</li>
+<li class="fragment">Despite repeated hand-wringing over the years, publication bias still rampant</li>
+<li class="fragment">Current publishing system is a major culprit</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/filedrawer.png"></p>
+</div>
+</div>
+</section>
+<section id="current-publishing-system" class="slide level2">
+<h2>Current publishing system</h2>
+<ul>
+<li class="fragment">Dominated by “high impact factor” journals</li>
+<li class="fragment">Emphasis on novelty, “exciting” and unexpected findings</li>
+<li class="fragment">Peer review can be biased (and sometimes not present)</li>
+<li class="fragment">Still a huge reluctance to publish null findings and replications (or non-replications)</li>
+</ul>
+</section>
+<section id="limitations-of-current-practice" class="slide level2">
+<h2>Limitations of current practice</h2>
+<ul>
+<li class="fragment">Slowness and inefficiency</li>
+<li class="fragment">Lack of transparency</li>
+<li class="fragment">Low reliability</li>
+<li class="fragment">Lack of incentives for reviewing</li>
+<li class="fragment">Article <a href="http://journal.frontiersin.org/article/10.3389/fncom.2012.00072/full">here</a></li>
+</ul>
+</section>
+<section id="recent-buzz" class="slide level2 smaller">
+<h2>Recent buzz</h2>
+<div class="r-stack">
+<p><img data-src="images/research_false.png" class="fragment" width="700"></p>
+<p><img data-src="images/distortion.png" class="fragment" width="700"></p>
+<p><img data-src="images/false_replication.png" class="fragment" width="700"></p>
+<p><img data-src="images/falsepositive_title.png" class="fragment" width="700"></p>
+<p><img data-src="images/peculiar_prevalence.png" class="fragment" width="600"></p>
+<p><img data-src="images/newmodel_title.png" class="fragment" width="700"></p>
+</div>
+</section>
+<section id="in-cancer-science-many-discoveries-dont-hold-up" class="slide level2 smaller">
+<h2>In cancer science, many “discoveries” don’t hold up</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<ul>
+<li class="fragment">C. Glenn Begley (former researcher at Amgen Inc) chose 53 “landmark” publications - from good labs, published in reputable journals</li>
+<li class="fragment">Of these, 47 could not be replicated</li>
+<li class="fragment">“We went through the paper line by line, figure by figure,” said Begley. “I explained that we re-did their experiment 50 times and never got their result. He said they’d done it six times and got this result once, but put it in the paper because it made the best story. It’s very disillusioning.”</li>
+<li class="fragment">Article <a href="https://www.reuters.com/article/idUSBRE82R12P20120328">here</a></li>
+</ul>
+</div><div class="column" style="width:35%;">
+<div class="fragment">
+<p><img data-src="images/begley.png"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="are-most-published-research-findings-false" class="slide level2">
+<h2>Are most published research findings false?</h2>
+<ul>
+<li class="fragment"><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">John Ioannidis (2005)</a></li>
+<li class="fragment">This paper made a big splash in 2005</li>
+<li class="fragment">Cited 1,559 times (update 2016: 1886 citations) (further update 2023: 7017 citations)</li>
+<li class="fragment">Argues that it can be shown most published findings are false, based on PPV (positive predictive value</li>
+</ul>
+</section>
+<section id="is-that-true" class="slide level2">
+<h2>Is that true?</h2>
+<ul>
+<li class="fragment">Much debate ensued</li>
+<li class="fragment">For a good summary, see <a href="blogs.plos.org/absolutely-maybe/2013/12/16/biomedical-research-believe-it-or-not/">Hilda Bastian’s blog Absoutely Maybe</a></li>
+<li class="fragment">Understanding PPV: Very good Shiny App <a href="https://www.shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&amp;by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&amp;title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&amp;shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?">here</a>.</li>
+<li class="fragment">General conclusion: We still have some cleaning up to do!</li>
+</ul>
+</section>
+<section id="section-4" class="slide level2" data-background-iframe="http://shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&amp;by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&amp;title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&amp;shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?" data-background-interactive="true">
+<h2></h2>
+</section>
+<section id="do-current-publishing-practices-distort-science" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 36%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning</th>
+<th>Analogy in Scientific Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Winner’s curse</td>
+<td>The winner in an auction tends on average to have overpaid, especially when no participant is sure exactly how valuable the item is.</td>
+<td>Scientific studies try to find true relationships, but none are certain of what these relationships are exactly. Published articles, especially in very competitive journals, have on average exaggerated results.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="do-current-publishing-practices-distort-science-1" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 39%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning Analogy in Scientific Publication</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Oligopoly</td>
+<td>A market where a few traders have the major share and each oligopolist has significant power to influence the market.</td>
+<td>Very few journals with limited publication slots (compared with geometrically increasing scientific data that seek publication) determine highly visible science.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="do-current-publishing-practices-distort-science-2" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 44%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning</th>
+<th>Analogy in Scientific Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Herding</td>
+<td>Follow-the-leader behaviour: the actions of the first or dominant player supersede the individual information and actions of all the players in a market.</td>
+<td>Scientists may uncritically follow paths of investigation that are popularised in prestigious publications, neglecting novel ideas and truly independent investigative paths.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="do-current-publishing-practices-distort-science-3" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 27%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning</th>
+<th>Analogy in Scientific Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Artificial scarcity</td>
+<td>Restrictions on the provision of a commodity above that expected from its production cost.</td>
+<td>Print page limits excuse failure to accept articles; small number of major high-impact journals have limited slots; extremely low acceptance rates provide status signals to successful publications and their authors.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="do-current-publishing-practices-distort-science-4" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 34%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning</th>
+<th>Analogy in Scientific Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Uncertainty</td>
+<td>Situation where the real long-term value of a commodity is largely unpredictable.</td>
+<td>For much (most?) scientific work, it is difficult or impossible to immediately predict future value, extensions, and practical applications</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="do-current-publishing-practices-distort-science-5" class="slide level2 smaller">
+<h2>Do current publishing practices distort science?</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 44%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Economic Term</th>
+<th>Meaning</th>
+<th>Analogy in Scientific Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Branding</td>
+<td>Marking a product as valuable; of key importance when it is difficult to determine a product’s value prior to consuming it.</td>
+<td>Publishing in selective journals provides evidence of value of a research result and its authors, independent of the manuscript’s content.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p><a href="https://doi.org/10.1371/journal.pmed.0050201">Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why Current Publication Practices May Distort Science. PLOS Medicine, 5(10), e201.</a></p>
+</div>
+</section>
+<section id="cautionary-tale-i-false-positive-psyhchology" class="slide level2">
+<h2>Cautionary tale I: False-positive psyhchology</h2>
+<div class="fragment">
+<p><img data-src="images/falsepositive.png"></p>
+</div>
+<div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="cautionary-tale-i-false-positive-psyhchology-1" class="slide level2">
+<h2>Cautionary tale I: False-positive psyhchology</h2>
+<ul>
+<li class="fragment">Argues that it’s easy to manipulate data to support any hypothesis</li>
+<li class="fragment">Computer simulation</li>
+<li class="fragment">Actual experiments</li>
+<li class="fragment">“Chronological rejuvenation”</li>
+<li class="fragment">Really?</li>
+</ul>
+<div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="study-1" class="slide level2 smaller">
+<h2>Study 1</h2>
+<h3 id="does-listening-to-a-childrens-song-make-you-feel-older">Does listening to a children’s song make you feel older?</h3>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li class="fragment">30 participants were randomly assigned to listen to either a control song (“Kalimba”) or “Hot Potato” by the Wiggles</li>
+<li class="fragment">Ostensibly unrelated survey: “How old do you feel right now” (very young, young, neither young nor old, old, and very old)</li>
+<li class="fragment">Also reported father’s age (to control for baseline variations in age)</li>
+<li class="fragment">ANCOVA showed people feel older after listening to “Hot Potato) (p = 0.033)</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="fragment">
+<p><img data-src="images/wiggles.png"></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="study-2" class="slide level2">
+<h2>Study 2</h2>
+<h3 id="does-listening-to-a-song-about-older-age-make-people-actually-younger">Does listening to a song about older age make people actually younger??</h3>
+<ul>
+<li class="fragment">Conceptual replication; same method; participants listened to either “Kalimba” or “When I’m 64”</li>
+<li class="fragment">Ostensibly unrelated survey; report age (mm/dd/yyyy) and father’s age</li>
+<li class="fragment">ANCOVA: people were nearly 1.5 years younger after listening to “When I’m 64” (F(1, 17) = 4.92, p = .040)</li>
+<li class="fragment">WTAF???</li>
+</ul>
+<div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="false-positive-psychology" class="slide level2">
+<h2>False positive psychology</h2>
+
+<img data-src="images/falsepositive_table1.png" class="r-stretch"><div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="effect-of-peeking" class="slide level2">
+<h2>Effect of “peeking”</h2>
+
+<img data-src="images/falsepositive_datapeeking.png" class="r-stretch"><div class="footer">
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis</p>
+<p>Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632" class="uri">https://doi.org/10.1177/0956797611417632</a></p>
+</div>
+</section>
+<section id="solutions-for-reviewers" class="slide level2">
+<h2>Solutions (for reviewers)</h2>
+<ol type="1">
+<li class="fragment">Reviewers should ensure that authors follow the requirements.</li>
+<li class="fragment">Reviewers should be more tolerant of imperfections in results.</li>
+<li class="fragment">Reviewers should require authors to demonstrate that their results do not hinge on arbitrary analytic decisions.</li>
+<li class="fragment">If justifications of data collection or analysis are not compelling, reviewers should require the authors to conduct an exact replication.</li>
+</ol>
+</section>
+<section id="solutions-for-authors" class="slide level2 smaller">
+<h2>Solutions (for authors)</h2>
+<ol type="1">
+<li class="fragment">Authors must decide the rule for terminating data collection before data collection begins and report this rule in the article.</li>
+<li class="fragment">Authors must collect at least 20 observations per cell or else provide a compelling cost-of-data-collection justification.</li>
+<li class="fragment">Authors must list all variables collected in a study.</li>
+<li class="fragment">Authors must report all experimental conditions, including failed manipulations.</li>
+<li class="fragment">If observations are eliminated, authors must also report what the statistical results are if those observations are included.</li>
+<li class="fragment">If an analysis includes a covariate, authors must report the statistical results of the analysis without the covariate.</li>
+</ol>
+</section>
+<section id="requirement-compliant-version-of-study-2" class="slide level2">
+<h2>Requirement-compliant version of study 2</h2>
+
+<img data-src="images/falsepositive_table3.png" class="r-stretch quarto-figure-center"><p class="caption">Data are avaiable <a href="openpsychologydata.metajnl.com/article/view/jopd.aa/5">here</a></p></section></section>
+<section id="questions-ask-on-moodle" class="title-slide slide level1 center" data-background-color="black" data-background-image="images/tilly.png">
+<h1>Questions? Ask on Moodle!</h1>
+
+<img src="images/UNE_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: true,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
