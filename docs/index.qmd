@@ -432,7 +432,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 
 ## Is that true?
 
--   Much debate ensued
+-   Much debate ensued (e.g. see [this preprint](https://replicationindex.com/2021/08/10/fpr-medicine/))
 -   For a good summary, see [Hilda Bastian's blog Absoutely Maybe](blogs.plos.org/absolutely-maybe/2013/12/16/biomedical-research-believe-it-or-not/)
 -   Understanding PPV: Very good Shiny App [here](https://www.shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?).
 -   General conclusion: We still have some cleaning up to do!
