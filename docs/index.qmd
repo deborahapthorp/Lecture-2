@@ -5,7 +5,7 @@ format:
   revealjs: 
     theme: sky
     incremental: true
-    preview-links: auto
+    preview-links: false
     slide-number: true
     logo: images/UNE_logo.png
     css: logo.css
@@ -615,6 +615,8 @@ Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--
 
 ## Requirement-compliant version of study 2
 
-![Data are avaiable [here](openpsychologydata.metajnl.com/article/view/jopd.aa/5)](images/falsepositive_table3.png)
+![](images/falsepositive_table3.png){.fragment}
+
+- Data are available [here](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.aa/)
 
 # Questions? Ask on Moodle! {background-color="black" background-image="images/tilly.png"}
