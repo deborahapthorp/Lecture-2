@@ -437,7 +437,6 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 -   Understanding PPV: Very good Shiny App [here](https://www.shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?).
 -   General conclusion: We still have some cleaning up to do!
 
-##  {background-iframe="http://shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?" background-interactive="true"}
 
 ## Do current publishing practices distort science? {.smaller}
 
