@@ -614,8 +614,8 @@ Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--
 
 ## Requirement-compliant version of study 2
 
-![](images/falsepositive_table3.png){.fragment}
+![Data are available [here](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.aa/)](images/falsepositive_table3.png)
 
-- Data are available [here](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.aa/)
+
 
 # Questions? Ask on Moodle! {background-color="black" background-image="images/tilly.png"}
