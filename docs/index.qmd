@@ -13,7 +13,7 @@ format:
 editor: source
 ---
 
-# Power, bias and research ethics - how to be a better researcher (Part I)
+# Power, bias and research ethics - how to be a better researcher (Part I){background-color="black" background-image="images/clouds.png"}
 
 ## Outline
 
@@ -113,7 +113,7 @@ Here random assignment is also important. Second manipulation must also be valid
 -   E.g. is coffee more effective in improving cognitive performance in the morning than the afternoon?
 -   **Note that effect sizes of interactions are usually smaller**.
 
-# Bias
+# Bias{background-color="black" background-image="images/flowers.png"}
 
 ## Types of bias
 
@@ -341,9 +341,11 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 :::
 :::
 
-# Bias (again)
+# Bias (again){background-color="black" background-image="images/lookingglass4.png"}
 
-"The first principle is that you must not fool yourself **and you are the easiest person to fool**." -- Richard Feynman
+"The first principle is that you must not fool yourself **and you are the easiest person to fool**." 
+
+-- Richard Feynman
 
 ## Issues in research and publication
 
