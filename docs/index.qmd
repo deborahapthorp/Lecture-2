@@ -15,6 +15,12 @@ editor: source
 
 # Power, bias and research ethics - how to be a better researcher (Part I){background-color="black" background-image="images/clouds.png"}
 
+## Slides are open source
+
+[Link for the HTML version](https://deborahapthorp.github.io/Lecture-2/) of these slides (always up to date)
+
+![](images/QRcode_L2.png){fig-align="center"}
+
 ## Outline
 
 -   Types of research questions and types of bias
@@ -38,6 +44,17 @@ editor: source
 -   Causal-comparative
 -   Causal-comparative interaction
 :::
+:::
+
+::: footer
+Source: Meltzoff, J & Cooper, H. (2018). Critical Thinking About Research: Psychology and Related Fields (2nd ed.)
+
+American Psychological Association. [https://www.apa.org/pubs/books/4318149](https://www.apa.org/pubs/books/4318149)
+:::
+
+::: notes
+These are from a previous year's set text - I've now committed to having all your texts as open educational resources, but I haven't seen this research classification taxonomy anywhere else and I think it's really useful, so I'm retaining it in this lecture. I'm going to go through each of these in more detail in the following slides. 
+
 :::
 
 ## Existence questions {.r-fit-text}
@@ -66,7 +83,7 @@ editor: source
 
 -   Is group X different to group Y on something?
 -   Doesn't have to be just 2 groups!
--   Sway example - compare SPD to SZ and controls
+-   Sway example - compare PD and controls
 -   Are Australians happier than Americans?
     -   *Be careful of measurement* - construct validity, reliability, generalisability, third variable problem
 
