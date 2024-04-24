@@ -542,9 +542,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 :::
 
 ::: footer
-Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis
-
-Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--1366. <https://doi.org/10.1177/0956797611417632>
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--1366. <https://doi.org/10.1177/0956797611417632>
 :::
 
 ## Cautionary tale I: False-positive psyhchology
