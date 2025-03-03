@@ -288,7 +288,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 
 ##  {background-color="white"}
 
-![Source: [Stuart Ritchie on Twitter](https://twitter.com/StuartJRitchie/status/1237172792350646273?s=20)](images/pvalues_hands.png){fig-align="center"}
+![Source: [Stuart Ritchie on Twitter](https://xcancel.com/StuartJRitchie/status/1237172792350646273?s=20)](images/pvalues_hands.png){fig-align="center"}
 
 ## Why is power important?
 
@@ -452,7 +452,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 
 -   [John Ioannidis (2005)](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124)
 -   This paper made a big splash in 2005
--   Cited 1,559 times (update 2016: 1,886 citations) (further update 2023: 7,053 citations)
+-   Cited 1,559 times (update 2016: 1,886 citations) (further update 2025: 8,542 citations)
 -   Argues that it can be shown most published findings are false, based on PPV (positive predictive value
 
 ## Is that true?
@@ -641,4 +641,4 @@ Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--
 
 
 
-# Questions? Ask on Moodle! {background-color="black" background-image="images/tilly.png"}
+# Questions? Ask on MyLearn! {background-color="black" background-image="images/tilly.png"}
