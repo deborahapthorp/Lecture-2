@@ -640,5 +640,4 @@ Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359--
 ![Data are available [here](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.aa/)](images/falsepositive_table3.png)
 
 
-
 # Questions? Ask on MyLearn! {background-color="black" background-image="images/tilly.png"}
