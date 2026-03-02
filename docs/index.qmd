@@ -209,7 +209,7 @@ But what can happen here is you can get it wrong - in fact, statistics is all ab
 
 ![](images/wrong.jpeg){fig-align="center"}
 
-Source: [Nathan Pyle on Twitter](https://twitter.com/nathanwpyle/status/1176860147223867393?s=20)
+Source: [Nathan Pyle](https://www.reddit.com/r/nathanwpyle/comments/i77r8z/that_is_science/)
 
 ## Decision errors in hypothesis testing
 
@@ -316,6 +316,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
     -   [Power and Sample Size](https://powerandsamplesize.com/)
     -   [ANOVA Power](https://shiny.ieis.tue.nl/anova_power/) (specifically for ANOVA designs)
 -   Downloadable program: [G\*Power3 (3.1.9.6)](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower)
+- jamovi now has some great power analysis tools that I will go over in one of the Stats Screencasts - see [this post about PAMLj](https://blog.jamovi.org/2024/10/28/pamlj.html)
 
 ## Effect size
 
@@ -415,7 +416,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 -   Lack of incentives for reviewing
 -   Article [here](http://journal.frontiersin.org/article/10.3389/fncom.2012.00072/full)
 
-## Recent buzz {.smaller}
+## Recent(ish) buzz {.smaller}
 
 ::: r-stack
 ![](images/research_false.png){.fragment width="700"}
@@ -438,7 +439,7 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 -   C. Glenn Begley (former researcher at Amgen Inc) chose 53 "landmark" publications - from good labs, published in reputable journals
 -   Of these, 47 could not be replicated
 -   "We went through the paper line by line, figure by figure," said Begley. "I explained that we re-did their experiment 50 times and never got their result. He said they'd done it six times and got this result once, but put it in the paper because it made the best story. It's very disillusioning."
--   Article [here](https://www.reuters.com/article/idUSBRE82R12P20120328)
+-   Article (2012) [here](https://www.reuters.com/article/idUSBRE82R12P20120328)
 :::
 
 ::: {.column width="35%"}
@@ -460,7 +461,8 @@ Do So Incorrectly. *Advances in Methods and Practices in Psychological Science*,
 -   Much debate ensued (e.g. see [this preprint](https://replicationindex.com/2021/08/10/fpr-medicine/))
 -   For a good summary, see [Hilda Bastian's blog Absoutely Maybe](blogs.plos.org/absolutely-maybe/2013/12/16/biomedical-research-believe-it-or-not/)
 -   Understanding PPV: Very good Shiny App [here](https://www.shinyapps.org/showapp.php?app=https://shiny.psy.lmu.de/felix/PPV&by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?).
--   General conclusion: We still have some cleaning up to do!
+-   Some convincing arguments [here](https://pubpeer.com/publications/14B6D332F814462D2673B6E9EF9AF9) that the maths was wrong (and a correction was issued, which is also wrong). 
+-   However, general conclusion: We still have some cleaning up to do!
 
 
 ## Do current publishing practices distort science? {.smaller}
